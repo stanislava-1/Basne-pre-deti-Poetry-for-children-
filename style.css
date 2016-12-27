@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-family: "Tahoma", Verdana, Arial;
+}
+
+/* page header */
+#top-header {
+	height: auto;
+	padding: 20px 0;
+	background-color: #f5f5f5;
+}
+
+h1 {
+	margin: 0;
+	padding: 30px 10px 10px 10px;	
+	font-size: 40px;
+}
+
+/* main menu */
+#main-menu {
+	background-color: #fff;
+	border-top: 1px solid #dcdcdc;
+	border-bottom: 1px solid #dcdcdc;
+	padding: 10px 0;
+}
+
+.nav-section {
+	display: inline-block;
+	margin: 15px 0;
+}
+
+.nav-item {
+	padding: 10px 15px;
+	margin: 0 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #ccc;
+	cursor: pointer;
+}
+
+.nav-descr {
+	margin: 0 0 0 15px;
+}
+
+.red {
+	/*background-color: #fa8072;*/
+	background-color: #ffa07a;
+	/*background-color: #ffb6c1;*/
+}
+
+.blue {
+	/*background-color: #6495ed;
+	background-color: #87cefa;*/
+	background-color: #add8e6;
+	background-color: #87ceeb;
+	background-color: #82b1ff;
+}
+
+.green {
+	background-color: #90ee90;
+}
+
+.yellow {
+	background-color: #ff6;
+}
+
+.violet {
+	background-color: #d8bfd8;
+}
+
+/* list of poetries shown when a category button is clicked */
+#poetry-list {
+	border-bottom: 1px solid #dcdcdc;
+	background-color: #c0c0c0;
+	padding: 10px 0;
+	display: none;
+}
+
+#list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.list-item {
+	padding: 10px 0;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#hide-list {
+	display: inline-block;
+	background-color: #fff;
+	width: auto;
+	padding: 8px;
+	margin: 20px 0 10px 0;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #ccc;
+	cursor: pointer;
+}
+
+/* page content */
+#container {
+	background-image: url("images/symphony.png");	
+    background-repeat: repeat;
+    padding: 10px 0;
+}
+
+.poetry {
+	width: 40%;
+	margin: 0 auto 10px auto;
+	padding: 30px 10px 0 10px;
+	background-color: #fff;
+	border: 1px solid #dcdcdc;
+	border-radius: 10px;
+}
+
+/* poetry header and footer content*/
+.author {
+	margin: 0;
+	font-style: italic;
+}
+
+.title {
+	margin-top: 10px;
+}
+
+.pdf-icon {
+	width: 30px;
+	height: auto;
+	vertical-align: -8px
+}
+
+.info {
+	margin: 0;
+	padding-bottom: 30px;
+	font-size: 13px;
+	font-style: italic;
+}
+
+.info-part {
+	display: inline-block;
+}
+
+/* page footer */
+#bottom-footer {
+	border-top: 1px solid #dcdcdc;
+}
+
+address {
+	padding: 10px;
+}
+
+
+/* top-bottom button */
+.topbottom {
+	width: 120px;
+	height: auto;
+	position: fixed;
+	right: 15%;
+	cursor: pointer;
+	border: 2px solid #dcdcdc;
+	box-shadow: 1px 1px 1px #808080;
+	display: none;
+}
+
+#top {
+	bottom: 200px;	
+	border-top-left-radius: 30em 40em;
+	border-top-right-radius: 30em 40em;
+}
+
+#bottom {
+	bottom: 100px;
+	border-bottom-left-radius: 30em 40em;
+	border-bottom-right-radius: 30em 40em;
+}
+
+/* media queries */
+@media only screen and (max-width: 1150px) {
+	.poetry {
+		width: 60%;
+	}
+
+	.topbottom {
+		width: 110px;
+		right: 4%;
+	}
+
+	#top {
+		bottom: 150px;
+	}
+
+	#bottom {
+		bottom: 60px;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.topbottom {
+		width: 100px;
+		right: 2%;
+	}
+
+	#top {
+		bottom: 120px;
+	}
+
+	#bottom {
+		bottom: 40px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.nav-descr {
+		display: none;
+	}
+
+	#top-picture {
+		width: 250px;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.topbottom {
+		width: 80px;
+		right: 1.5%;
+	}
+
+	#top {
+		bottom: 80px;
+	}
+
+	#bottom {
+		bottom: 15px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.poetry {
+		width: 70%;
+	}
+
+	.topbottom {
+		right: 2.5%;
+	}
+
+	#top {
+		bottom: 200px;
+	}
+
+	#bottom {
+		bottom: 135px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	h1 {
+		font-size: 30px;
+		padding: 15px 10px 5px 10px;
+	}
+
+	#top-picture {
+		width: 200px;
+	}
+
+	.poetry {
+		width: 85%;
+	}
+}
+
+@media only screen and (max-width: 415px) {
+	h1 {
+		font-size: 28px;
+		padding: 7px 10px 0 10px;
+	}
+
+	#top-picture {
+		width: 180px;
+	}
+
+	#container {
+		padding: 0;
+	}
+
+	.poetry {
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+	}
+
+	#main-menu {
+		padding: 0;
+	}
+
+	.nav-item, .nav-section {
+		display: block;
+		margin: 0;
+	}
+
+	.nav-item {
+		padding: 17px;
+		border-radius: 0;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	h1 {
+		font-size: 26px;
+		padding: 5px 10px 0 10px;
+	}
+
+	#top-picture {
+		width: 160px;
+	}
+}
+
+
+
+
